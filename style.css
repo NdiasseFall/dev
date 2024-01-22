@@ -135,22 +135,26 @@ section {
   background: var(--text-color);
   border: 2px solid var(--text-color);
 }
+
 .share {
   position: absolute;
-  bottom: 3rem;
-  left: 15%;
-  display: flex;
+  display:flex ;
+  justify-content: center;
   align-items: center;
+  bottom: 3rem;
+  
 }
+
 .share p {
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: ;
   color: var(--text-color);
   margin-right: 25px;
 }
 .social i {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 45px;
   width: 45px;
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
