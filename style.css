@@ -59,6 +59,8 @@ header {
 }
 .navbar a:hover {
   color: var(--main-color);
+  text-decoration: underline;
+
 }
 .navbar a.active {
   color: var(--main-color);
@@ -66,6 +68,7 @@ header {
 section {
   padding: 0 15%;
 }
+
 .home {
   position: relative;
   width: 100%;
@@ -135,22 +138,32 @@ section {
   background: var(--text-color);
   border: 2px solid var(--text-color);
 }
+footer{
+  border-top: 1px solid #ffffff;
+  padding: 50px;
+}
+.fistDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .share {
-  position: absolute;
-  display:flex ;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: 3rem;
-  
+  padding-bottom: 50px;
 }
-
+ 
 .share p {
   font-size: 20px;
-  font-weight: ;
-  color: var(--text-color);
+  font-weight:bold ;
+  color: var(--main-color);
+  padding-bottom: 25px;
   margin-right: 25px;
-}
+} 
 .social i {
   display: inline-flex;
   justify-content: center;
@@ -168,9 +181,37 @@ section {
 }
 .social i:hover {
   transform: translateY(-10px);
+} 
+.letter{
+  padding-bottom: 70px;
+}
+.letter p{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.letter div input{
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 9px 28px;
+  padding-left: 14px 34px;
+  border: 2px solid var(--main-color);
+}
+.letter div input:focus{
+  background: transparent;
+  color: var(--main-color);
+}
+.letter .btn:hover{
+  transform: translateY(0);
+  background: transparent;
+  color: var(--main-color);
+  cursor: pointer;
 }
 
-@media (max-width: 1850px) {
+
+
+@media only screen and (max-width: 1850px) {
   header {
     padding: 0 8%;
     transition: 0.2s;
@@ -184,7 +225,7 @@ section {
     transition: 0.2s;
   }
 }
-@media (max-width: 1370px) {
+@media only screen and (max-width: 1370px) {
   header {
     padding: 0 4%;
     transition: 0.2s;
@@ -203,7 +244,7 @@ section {
     transition: 0.2s;
   }
 }
-@media (max-width: 1020px) {
+@media only screen and (max-width: 1020px) {
   .navbar a {
     margin: 0 15px;
   }
@@ -213,9 +254,11 @@ section {
     transition: 0.2s;
   }
 }
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   .share {
-    display: none;
+    position: relative;
+    margin: 15%;
+    transition: 0.2s;
   }
   section {
     padding: 70 4%;
@@ -232,6 +275,7 @@ section {
   .home-text {
     order: 2;
   }
+
   .home-img {
     margin: auto;
     height: auto;
@@ -240,10 +284,14 @@ section {
   .home-img img {
     max-width: 350px;
     width: 100%;
-    /* height: auto; */
+    height: auto;
   }
 }
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
+  .share{
+    left: 0%;
+    transition: 0.2s;
+  }
   .menu-btn {
     display: flex;
   }
@@ -296,12 +344,13 @@ section {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   :root {
     --big-font: 4rem;
     --p-font: 15px;
     transition: 0.2s;
   }
+
   .btn {
     padding: 9px 28px;
   }
