@@ -196,11 +196,56 @@ section {
     font-weight: 700;
     font-size: 16px;
 }
+#mesprojets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    border: 1px var(--main-color) solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px;
+    margin: 25px 0;
+}
+.cart2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 55px;
+}
+.cart2 .contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(130.08deg, #7a7975 0%, #383737 0%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 10%;
+    padding: 20px;
+}
+.cart2 .contenu img {
+    width: 300px;
+    padding: 25px 0;
+}
+.carts .cart2 .btn {
+    padding: 5px;
+}
 
 footer {
     border-top: 1px solid #00f7ff;
     box-shadow: #98b8c5;
-    padding: 50px;
+    padding: 20px;
 }
 .fistDiv {
     display: flex;
@@ -212,7 +257,7 @@ footer {
 footer .email {
     display: flex;
     gap: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 .email i {
     font-size: 2em;
@@ -228,7 +273,7 @@ footer .email {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .share div:nth-child(1) p {
@@ -284,10 +329,10 @@ footer .email {
     cursor: pointer;
 }
 .right {
-    left: 0;
     display: flex;
     align-items: center;
     gap: 18%;
+    padding-left: 70px;
     margin-bottom: 20px;
 }
 .right a {
@@ -334,6 +379,14 @@ footer .email {
         transition: 0.2s;
     }
 }
+@media only screen and (max-width: 1300px) {
+    .carts {
+        width: 100%;
+    }
+    .contenu .pro-btn a:nth-child(1) {
+        margin-bottom: 15px;
+    }
+}
 @media only screen and (max-width: 1200px) {
     #experience .about-containers {
         width: 100%;
@@ -341,6 +394,12 @@ footer .email {
     }
     #experience .details-container {
         width: 450px;
+    }
+    .carts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
     }
 }
 @media only screen and (max-width: 1020px) {
@@ -452,6 +511,12 @@ footer .email {
     .right {
         gap: 10%;
     }
+    .carts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5px;
+    }
 }
 @media only screen and (max-width: 700px) {
     .about-containers {
@@ -502,6 +567,9 @@ footer .email {
     }
     .share .email p {
         font-size: 16px;
+    }
+    .carts {
+        padding: 25px;
     }
 }
 @media only screen and (max-width: 420px) {
