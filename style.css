@@ -8,7 +8,7 @@
 }
 :root {
     --bg-color: #1f1f21;
-    --text-color: #fff;
+    --text-color: lightgray;
     --main-color: #00f7ff;
 
     --big-font: 7rem;
@@ -110,6 +110,7 @@ section {
 .home-text h1 {
     font-size: var(--big-font);
     margin: 23px 0;
+    color: #fff;
 }
 .home-text p {
     font-size: var(--p-font);
@@ -306,6 +307,7 @@ footer .email {
     padding-bottom: 70px;
 }
 .letter p {
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
